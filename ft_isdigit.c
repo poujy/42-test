@@ -21,12 +21,3 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
-
-int	main(void)
-{
-	printf("a : %d\n", ft_isdigit('a'));
-	printf("Z : %d\n", ft_isdigit('Z'));
-	printf("5 : %d\n", ft_isdigit('5'));
-	printf("espace : %d\n", ft_isdigit(' '));
-	return (0);
-}
