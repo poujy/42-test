@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:37:57 by jquer             #+#    #+#             */
-/*   Updated: 2026/10/20 16:44:43 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/20 17:02:12 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int     ft_isprint(int c);
 int     ft_toupper(int c);
 int     ft_tolower(int c);
 size_t      ft_strlen(const char *s);
+char    ft_strchr(const char *str, int ch);
 
 #endif
