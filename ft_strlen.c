@@ -6,9 +6,11 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 16:21:02 by username         #+#    #+#              */
-/*   Updated: 2026/10/20 20:57:51 by username        ###   ########.fr        */
+/*   Updated: 2026/10/21 10:50:23 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {
