@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 09:00:23 by username         #+#    #+#              */
-/*   Updated: 2026/10/21 09:57:29 by username        ###   ########.fr        */
+/*   Updated: 2026/10/21 10:36:55 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	*memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-
 	if (src < dest)
 	{
 		while (n--)

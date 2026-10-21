@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/20 16:37:57 by username         #+#    #+#              */
-/*   Updated: 2026/10/21 10:29:20 by username        ###   ########.fr        */
+/*   Updated: 2026/10/21 10:37:42 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	ft_strchr(const char *str, int ch);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t count);
 void	*ft_memset(void *s, int c, size_t n);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+int		ft_strlcpy(char *dst, const char *src, size_t size);
 
 #endif

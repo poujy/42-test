@@ -6,14 +6,16 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 10:04:31 by username         #+#    #+#              */
-/*   Updated: 2026/10/21 10:32:07 by username        ###   ########.fr        */
+/*   Updated: 2026/10/21 10:37:23 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-ft_strlcpy(char * dst, const char * src, size_t size)
+
+int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
+
 	i = 0;
 	if (size)
 	{
