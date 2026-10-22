@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:36:33 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 09:13:14 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/22 09:36:21 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,7 +141,7 @@ static void	test_bzero(void)
 static void	test_memcmp(void)
 {
 	int		res = 0;
-	char	s1[10] = "geeks";
+	char	s1[10] = "geeks\0fafaf";
 	char	s2[10] = "greeks";
 	size_t	len1 = strlen(s1);
 	size_t	len2 = strlen(s2);
