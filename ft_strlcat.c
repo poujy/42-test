@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                       :::      ::::::::    */
-/*   ft_strlcat.c                                      :+:      :+:    :+:    */
-/*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
-/*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/21 10:48:47 by username         #+#    #+#              */
-/*   Updated: 2026/10/21 11:15:26 by username        ###   ########.fr        */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 10:48:47 by username          #+#    #+#             */
+/*   Updated: 2026/10/22 15:25:57 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {
+	size_t	dest_len;
+	size_t	src_len;
 	size_t	i;
-	size_t	dst_len;
 
-	dst_len = ft_strlen(dst);
+	dest_len = 0;
+	while (dest[dest_len] && dest_len < destsize)
+		dest_len++;
+	src_len = 0;
+	while (src[src_len])
+		src_len++;
+	if (destsize == 0 || destsize <= dest_len)
+		return (destsize + src_len);
 	i = 0;
-	if (size)
+	while (src[i] && dest_len + i < destsize - 1)
 	{
-		while (src[i] != '\0' && i < size)
-		{
-			dst[i + dst_len] = src[i];
-			i++;
-		}
-		dst[i + dst_len] = 0;
+		dest[dest_len + i] = src[i];
+		i++;
 	}
-	if (dst_len > size)
-		return (size + ft_strlen(src));
-	return (dst_len + ft_strlen(src));
+	dest[dest_len + i] = '\0';
+	return (dest_len + src_len);
 }
