@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:36:33 by username          #+#    #+#             */
-/*   Updated: 2026/10/21 16:37:46 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/22 09:13:14 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,6 +138,29 @@ static void	test_bzero(void)
 	check("ft_bzero", ok);
 }
 
+static void	test_memcmp(void)
+{
+	int		res = 0;
+	char	s1[10] = "geeks";
+	char	s2[10] = "greeks";
+	size_t	len1 = strlen(s1);
+	size_t	len2 = strlen(s2);
+	size_t	n = (len1 < len2) ? len1 : len2;
+
+	// Compare the common bytes of both strings
+	res = ft_memcmp(s1, s2, n);
+	if (res > 0)
+		printf("s1 is greater");
+	else if (res < 0)
+		printf("s2 is greater");
+	else if (len1 == len2)
+		printf("both are equal");
+	else if (len1 < len2)
+		printf("s1 is smaller");
+	else
+		printf("s2 is smaller");
+}
+
 int	main(void)
 {
 	test_is();
@@ -145,5 +168,6 @@ int	main(void)
 	test_strchr();
 	test_memset();
 	test_bzero();
+	test_memcmp();
 	return (0);
 }

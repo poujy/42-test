@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:37:57 by username          #+#    #+#             */
-/*   Updated: 2026/10/21 17:47:23 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/22 09:05:12 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ void	*ft_memset(void *s, int c, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strrchr(const char *str, int ch);
-void	*memchr(const void *ptr, int ch, size_t count);
-
+void	*ft_memchr(const void *ptr, int ch, size_t count);
+int		ft_memcmp(const char *s1, const char *s2, size_t n);
 #endif
