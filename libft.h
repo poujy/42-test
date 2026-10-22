@@ -6,7 +6,7 @@
 /*   By: jquer <jquer@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:37:57 by username          #+#    #+#             */
-/*   Updated: 2026/10/22 09:56:33 by jquer            ###   ########.fr       */
+/*   Updated: 2026/10/22 17:03:36 by jquer            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,5 @@ char	*ft_strrchr(const char *str, int ch);
 void	*ft_memchr(const void *ptr, int ch, size_t count);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *nptr);
 #endif
